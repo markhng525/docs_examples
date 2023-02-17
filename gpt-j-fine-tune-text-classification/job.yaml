@@ -1,0 +1,8 @@
+name: gpt-j-fine-tune-text-classification
+compute_config: cld_siu8uf54c989s7yayj7ck7hz4h
+cluster_env: gpt-j-env
+runtime_env:
+  working_dir: "https://github.com/markhng525/docs_examples/archive/refs/heads/main.zip"
+  # You may also specify other runtime environment properties like `pip` and `env_vars`
+entrypoint: "cd gpt-j-fine-tune-text-classification && python -m transformers_example --model_name_or_path EleutherAI/gpt-j-6B --task_name stsb --num_workers 2 --use_gpu"
+max_retries: 3

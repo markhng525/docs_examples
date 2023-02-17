@@ -1,7 +1,7 @@
 name: "diffusion-service-aws"
 compute_config:
   # Override the cloud id here
-  cloud_id: cld_4F7k8814aZzGG8TNUGPKnc
+  cloud_id: cld_siu8uf54c989s7yayj7ck7hz4h
   region: us-west-2
   head_node_type:
     name: head_node

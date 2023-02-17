@@ -1,0 +1,15 @@
+base_image: anyscale/ray-ml:2.2.0-py310-gpu
+env_vars: {}
+debian_packages:
+- curl
+python:
+  pip_packages:
+  - accelerate==0.16.0
+  - datasets==2.9.0
+  - mosaicml==0.12.1
+  - pandas==1.5.3
+  - torch==1.13.1
+  - transformers==4.26.1
+  - tensorboard==2.12.0
+  conda_packages: []
+post_build_cmds: []
